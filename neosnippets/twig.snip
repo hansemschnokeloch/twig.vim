@@ -145,3 +145,9 @@ options     head
 	{% ${1:#:tag} ${2:#:name} %}
 		${0:TARGET}
 	{% end$1 %}
+
+snippet     trans
+abbr        {% trans %} ... {% endtrans %}
+options     head
+	{% trans %}${0:TARGET}{% endtrans %}
+
